@@ -14,8 +14,10 @@ total = 0
 try:
     while True:
         item=input('Item: ').lower()
-        if item in menu:
+        try:
             total += menu[item]
             print(f'Total: ${total:.2f}')
+        except:
+            pass
 except EOFError:
     print(f'Total: ${total:.2f}')
