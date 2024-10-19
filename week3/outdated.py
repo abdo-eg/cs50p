@@ -19,10 +19,7 @@ while True:
     date = input('Date: ')
     if re.match(date_pattern, date):
         date = date.replace(' ','')
-        date=date.split('/')
-        day=date[1]
-        month=date[0]
-        year=date[2]
+        month, day, year =date.split('/')
         # formateting
         if int(day)<10 and len(day)!=2:
             day = "0"+str(day)
@@ -34,10 +31,8 @@ while True:
     else:
         try:
             if ',' in date:
-                date = date.split(" ")
-                month   = date[0]
-                day = date[1].replace(",","")
-                year  = date[2]
+                month, day, year = date.split(" ")
+                day = day.replace(",","")
                 if month in months and int(day)<31:
                     if len(day)!=2: #formate days
                         day = "0" + str(day)
