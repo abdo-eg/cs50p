@@ -1,5 +1,5 @@
 import sys
-import requests
+import requests # dont forget to run $pip install requests
 try:
     quantity = float(sys.argv[1])
 except:
