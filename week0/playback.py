@@ -10,5 +10,4 @@
 
 # print(new_str)
 # ******* or using one line of code! *******
-print(input().replace(' ','...'))
-
+print(input().replace(" ", "..."))

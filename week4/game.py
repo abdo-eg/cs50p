@@ -1,13 +1,15 @@
 import random
 
+
 def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            if level > 0:  
+            if level > 0:
                 return level
         except ValueError:
             pass
+
 
 def get_guess():
     while True:
@@ -16,6 +18,7 @@ def get_guess():
             return guess
         except ValueError:
             pass
+
 
 def check(random_number):
     while True:
@@ -28,7 +31,7 @@ def check(random_number):
         else:
             print("Too Small!")
 
+
 level = get_level()
 random_number = random.randint(1, level)
 check(random_number)
-

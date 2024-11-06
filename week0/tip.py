@@ -4,14 +4,16 @@ def main():
     tip = dollars * percent
     print(f"Leave ${tip:.2f}")
 
+
 def dollars_to_float(d):
-    d=d.split("$")
-    return(float(d[1]))
+    d = d.split("$")
+    return float(d[1])
+
 
 def percent_to_float(p):
-    p=p.split("%")
-    a=float(p[0])
-    return(a/100)
+    p = p.split("%")
+    a = float(p[0])
+    return a / 100
+
 
 main()
-
